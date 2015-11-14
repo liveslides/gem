@@ -2,6 +2,8 @@
 
 Integrate LiveSlides into your Ruby web application.
 
+[![Code Climate](https://codeclimate.com/github/liveslides/gem/badges/gpa.svg)](https://codeclimate.com/github/liveslides/gem) [![Build Status](https://travis-ci.org/liveslides/gem.svg)](https://travis-ci.org/liveslides/gem)
+
 ## Installation
 
 Add this line to your application's Gemfile:
