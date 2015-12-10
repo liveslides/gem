@@ -28,7 +28,7 @@ LiveSlides works in any Ruby web application framework, but support for the most
 
 The LiveSlides gem Just Works™ with Rails when you add to your Gemfile. To add a "Download LiveSlide" button to your application, just call the helper:
 
-```
+```erb
 <%= liveslide_button("https://my-website.com/awesome-content", title: "Awesome content") %>
 ```
 
