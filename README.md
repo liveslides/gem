@@ -32,6 +32,25 @@ The LiveSlides gem Just Works™ with Rails when you add to your Gemfile. To add
 <%= liveslide_button("https://my-website.com/awesome-content", title: "Awesome content") %>
 ```
 
+### Sinatra
+
+In Sinatra just require the LiveSlides gem and register the helper module:
+
+```ruby
+require 'sinatra/base'
+require 'liveslides'
+
+class HelloApp < Sinatra::Base
+  helpers LiveSlides::Helper
+
+  get "/hello" do
+    redirect liveslides_slide_url("https://my-website.com/awesome-content", title: "Awesome content")
+  end
+end
+
+run HelloApp
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
